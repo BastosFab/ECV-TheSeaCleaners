@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body style="background: url(./Assets/background.png);
+             background-size: cover;">
+    <div id="root">
+        <div id="topnav" class="topnav">
+            <a id="home_link" class="topnav_link" href="/">HOME</a>
+
+            <!-- Classic Menu -->
+            <nav role="navigation" id="topnav_menu">
+                <a class="topnav_link" href="https://www.theseacleaners.org/fr/accueil/" target="_blank">MON PROFIL</a>
+                <a class="topnav_link" href="https://www.theseacleaners.org/fr/accueil/" target="_blank">CONTACT</a>
+            </nav>
+
+            <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                <!-- Some spans to act as a hamburger -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <!-- Responsive Menu -->
+            <nav role="navigation" id="topnav_responsive_menu">
+                <ul>
+                    <li><a href="/">JOURNAL DE MANTA</a></li>
+                    <li><a href="https://www.theseacleaners.org/fr/accueil/" target="_blank">MON PROFIL</a></li>
+                    <li><a href="https://www.theseacleaners.org/fr/accueil/" target="_blank">HISTORIQUE</a></li>
+                    <li><a href="https://www.theseacleaners.org/fr/accueil/" target="_blank">EVENEMENT FUTUR</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <section class="section-ray">
+        <img src="./assets/RayBIG.png" alt="" class="ray">
+    </section>
+    <section class="section-text1">
+        <button type="button" id="myBtn" class="bloc1 block">click on me</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore laboriosam nobis perferendis
+                    voluptates eos illo, atque animi, inventore quia vitae magni, officia velit natus repudiandae
+                    possimus quas optio fugiat minus?</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-text2 block"></section>
+
+    <script src="./js/popup.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/intersectionObserver.js"></script>
+</body>
+
+</html>
