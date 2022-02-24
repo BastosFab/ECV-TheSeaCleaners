@@ -10,16 +10,34 @@ section {
 }
 
 
-.bloc1 {
+.bloc1,
+.sac {
     position: absolute;
     height: 100px;
     width: 100px;
     top: 130%;
     right: 15px;
-    background-color: red;
+    background: transparent;
+    border: none;
 }
 
-.block {
+.bloc1 {
+  z-index: 1;
+}
+
+.bloc2,
+.glass {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 210%;
+    left: 15px;
+    background: transparent;
+    border: none;
+}
+
+.block1,
+.block2 {
   opacity: 0;
 }
 
@@ -336,4 +354,27 @@ section {
       transform: translateX(0);
       opacity: 1;
   }
+}
+
+
+
+
+.fadeInLeft {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.fadeInRight {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.fadeInBtm {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.zoomIn {
+  transform: scale(1);
+  opacity: 1;
 }

@@ -1,4 +1,5 @@
-const rayAnimation = document.querySelector('.block');
+const scrollAnimation = document.querySelectorAll('.block');
+// const glass = document.querySelector('.block2');
 
 observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -14,5 +15,38 @@ observer = new IntersectionObserver((entries) => {
     threshold: 1
 });
 
+scrollAnimation.forEach(image => {
+    observer.observe(image);
+});
+// observer.observe(glass);
 
-observer.observe(rayAnimation);
+
+// const section = document.querySelector(".section")
+// const block = document.querySelectorAll(".block")
+// const imgs = document.querySelectorAll("img")
+// const animClasses = [
+//     "fadeInLeft",
+//     "fadeInRight",
+//     "fadeInBtm",
+//     "zoomIn",
+// ]
+// const observer = new IntersectionObserver((entries, observer) => {
+//     entries.forEach(entry => {
+//         const currentIndex = Array.from(block).indexOf(entry.target)
+//         if (entry.isIntersecting) {
+//             imgs[currentIndex].classList.add(animClasses[currentIndex])
+//         } else {
+//             if (entry.boundingClientRect.y > 0) {
+//                 imgs[currentIndex].classList.remove(animClasses[currentIndex])
+//             }
+//         }
+//     })
+// }, {
+//     root: section,
+//     threshold: 0.1,
+// })
+
+
+// block.forEach(block => {
+//     observer.observe(block)
+// })
