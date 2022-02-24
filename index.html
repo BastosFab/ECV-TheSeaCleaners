@@ -32,14 +32,85 @@
             <nav role="navigation" id="topnav_responsive_menu">
                 <ul>
                     <div class="title-menu">
-                        <h1>Le journal de Manta</h1>
-                        <img src="" alt="">
+                        <h1>Le journal de <br>Manta</h1>
+                        <img src="./Assets/logo.png" alt="">
                     </div>
 
-                    <li><a href="#">JOURNAL DE MANTA</a></li>
-                    <li><a href="https://www.theseacleaners.org/fr/accueil/" target="_blank">MON PROFIL</a></li>
-                    <li><a href="https://www.theseacleaners.org/fr/accueil/" target="_blank">HISTORIQUE</a></li>
-                    <li><a href="https://www.theseacleaners.org/fr/accueil/" target="_blank">EVENEMENT FUTUR</a></li>
+                    <li id="topnav_manta" onclick="showResponsiveMenu()">
+                        <img src="./Assets/icons/calendar.svg" alt="" sizes="" srcset="">
+                        <a href="#">Journal de Manta</a>
+                    </li>
+                    <li>
+                        <img src="./Assets/icons/user.svg" alt="" srcset="">
+                        <a target="_blank" id="myBtn">Mon Profil</a>
+                        <div id="myModal" class="modal modal_Profil">
+                            <div class="modal-content modal-content_Profil">
+                                <img src="./Assets/icons/close.svg" class="close" alt="" srcset="">
+                                <div class="modalText_Profil">
+                                    <img src="./Assets/profilbg.jpg" alt="" srcset="">
+                                    <div class="name">
+                                        <h1>Yves</h1>
+                                        <img src="./Assets/icons/pen.svg" alt="" srcset="">
+                                    </div>
+                                    <p>ypermat@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./Assets/icons/archive.svg" alt="">
+                        <a href="https://www.theseacleaners.org/fr/accueil/" target="_blank">Historique des faits</a>
+                    </li>
+                    <li>
+                        <img src="./Assets/icons/speaker.svg" alt="">
+                        <a href="https://www.theseacleaners.org/fr/accueil/" target="_blank">Évènements à venir</a>
+                    </li>
+                    <li>
+                        <img src="./Assets/icons/infos.svg" alt="">
+                        <a href="https://www.theseacleaners.org/fr/accueil/" target="_blank">Tutoriel</a>
+                    </li>
+
+                    <div class="flag">
+                        <img src="./Assets/flags/flag_fr.png" alt="" srcset="">
+                        <img src="./Assets/flags/flag_uk.png" alt="" srcset="" style="filter: grayscale(100%);">
+                        <img src="./Assets/flags/flag_al.png" alt="" srcset="" style="filter: grayscale(100%);">
+                        <img src="./Assets/flags/flag_es.png" alt="" srcset="" style="filter: grayscale(100%);">
+                    </div>
+
+                    <div class="socialMedia">
+                        <p>Nous rejoindre :</p>
+                        <a href="https://www.facebook.com/theseacleaners" target="_blank">
+                            <img src="./Assets/socials/5279111_network_fb_social media_facebook_facebook logo_icon.svg"
+                                alt="" srcset="" href="https://www.facebook.com/theseacleaners" target="_blank">
+                        </a>
+                        <a href="https://www.instagram.com/theseacleaners/?hl=fr" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="./Assets/socials/5279112_camera_instagram_social media_instagram logo_icon.svg"
+                                alt="" srcset="" href="" target="_blank">
+                        </a>
+                        <a href="https://www.linkedin.com/company/theseacleaners/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="./Assets/socials/5279114_linkedin_network_social network_linkedin logo_icon.svg"
+                                alt="" srcset="" href="" target="_blank">
+                        </a>
+                        <a href="https://www.youtube.com/c/TheSeaCleaners" target="_blank" rel="noopener noreferrer">
+                            <img src="./Assets/socials/5279120_play_video_youtube_youtuble logo_icon.svg" alt=""
+                                srcset="" href="" target="_blank">
+                        </a>
+                        <a href="https://twitter.com/theseacleaners" target="_blank" rel="noopener noreferrer">
+                            <img src="./Assets/socials/5305173_tweet_twitter_twitter logo_icon.svg" alt="" srcset=""
+                                href="" target="_blank">
+                        </a>
+                        <a href="https://www.tiktok.com/@theseacleaners?lang=fr" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="./Assets/socials/7693325_tiktok_social media_logo_apps_icon.svg" alt="" srcset=""
+                                href="" target="_blank">
+                        </a>
+                    </div>
+
+                    <div class="footerMenu">
+                        <p>about - FAQ - faire un don - devenir bénévole</p>
+                    </div>
                 </ul>
             </nav>
         </div>
@@ -55,10 +126,19 @@
         <button type="button" id="myBtn" class="bloc1 block"></button>
         <div id="myModal" class="modal">
             <div class="modal-content">
-                <span class="close"></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore laboriosam nobis perferendis
-                    voluptates eos illo, atque animi, inventore quia vitae magni, officia velit natus repudiandae
-                    possimus quas optio fugiat minus?</p>
+                <img src="./Assets/icons/close.svg" class="close" alt="" srcset="">
+                <div class="modalText">
+                    <h1>LORAM IPSUM DOLOR</h1>
+                    <h2>Lorem ipsum dolor</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et itaque tenetur distinctio, ex
+                        esse atque pariatur voluptatibus molestiae</p>
+                    <h2>Lorem ipsum dolor</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et itaque tenetur distinctio, ex
+                        esse atque pariatur voluptatibus molestiae</p>
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Un sac plastique est un sac léger fabriqué en matière plastique.</p>
+                </div>
+                <button class="close closeCheck">Ok !</button>
             </div>
         </div>
     </section>
