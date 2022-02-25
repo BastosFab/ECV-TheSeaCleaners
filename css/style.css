@@ -82,13 +82,13 @@ section {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
 
-  .modalText {
+  /* .modalText {
     transform: scale(0.9);
-  }
+  } */
 
   .modalText h1{
     margin: 10px 0 0 0;
-    font-size: 34px;
+    font-size: 32px;
   }
 
   .modalText h2 {
@@ -96,7 +96,7 @@ section {
   }
 
   .modalText p {
-    line-height: 26px;
+    line-height: 22px;
   }
   
   /* Modal Content/Box */
