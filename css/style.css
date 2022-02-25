@@ -92,7 +92,11 @@ section {
   }
 
   .modalText h2 {
-    margin: 24px 0 16px 0;
+    margin: 20px 0 16px 0;
+  }
+
+  .modalText h3 {
+    margin-bottom: 0;
   }
 
   .modalText p {
