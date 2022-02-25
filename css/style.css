@@ -71,7 +71,7 @@ section {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 10; /* Sit on top */
+    z-index: 100; /* Sit on top */
     align-items: center;
     left: 0;
     top: 0;
@@ -105,7 +105,7 @@ section {
   
   /* Modal Content/Box */
   .modal-content {
-    height: 80%;
+    height: 90%;
     background-color: #F3F3F3;
     border-radius: 24px;
     margin: 5%; /* 15% from the top and centered */
